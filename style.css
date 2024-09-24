@@ -1,0 +1,144 @@
+body {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  height: 100vh;
+  background-image: url('https://i.pinimg.com/originals/b8/60/07/b860073138798a312487a9e1bdd290ee.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  align-items: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.4375em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 40px;
+}
+h2 {
+  font-weight: 500;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  height: auto;
+  display: flex; /* Добавлено */
+  flex-direction: column; /* Добавлено */
+  align-items: center; /* Добавлено */
+}
+
+.table-container {
+  height: 505px; /* Установка высоты контейнера */
+  overflow-y: scroll; /* Добавление вертикальной прокрутки */
+  width: 80%; /* Ширина контейнера */
+  margin-top: 60px; /* Отступ сверху */
+  padding-right: 2px; /* Отступ справа для скроллбара */
+  color: #fff;
+  margin-bottom: 90px;
+}
+
+/* Стили для Firefox */
+
+/* Стили для скроллбара в WebKit-браузерах */
+.table-container::-webkit-scrollbar {
+  width: 7px; /* Ширина скроллбара */
+  border-radius: 5px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1); /* Цвет фона трека */
+  border-radius: 10px; /* Закругление углов трека */
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5); /* Цвет ползунка */
+  border-radius: 10px; /* Закругление углов ползунка */
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7); /* Цвет ползунка при наведении */
+}
+
+table {
+  width: calc(100% - 10px); /* Уменьшаем ширину таблицы на размер отступа */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+.source {
+  color: rgba(255, 255, 255, 1);
+  scale: calc(1);
+  transition: all 0.2s ease-in-out;
+}
+.source:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+a {
+  color: #fff;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    width: 95%;
+  }
+}
+@media (max-width: 560px) {
+  .container {
+    width: 90%;
+  }
+  .table-container {
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 0;
+  }
+  table {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-top: 20px; /* Уменьшенный отступ сверху */
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  th,
+  td {
+    padding: 4px; /* Уменьшенные отступы для мобильных устройств */
+    font-size: 0.8rem; /* Уменьшение размера шрифта для мобильных устройств */
+  }
+}
+@media (max-width: 430px) {
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 20px; /* Уменьшенный отступ сверху */
+  }
+  .table-container {
+    width: 95%;
+  }
+}

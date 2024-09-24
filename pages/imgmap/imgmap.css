@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  height: 100vh;
+  background-image: url('https://i.pinimg.com/originals/b8/60/07/b860073138798a312487a9e1bdd290ee.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  align-items: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.4375em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 40px;
+}
+.main {
+  display: block;
+  font-weight: 500;
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+.main:hover {
+  scale: calc(1.05);
+
+  color: rgba(255, 255, 255, 0.7);
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  height: 780px;
+  display: flex; /* Добавлено */
+  flex-direction: column; /* Добавлено */
+  align-items: center; /* Добавлено */
+}
+
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  flex: 0 0 auto;
+  width: 95%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+svg {
+  cursor: pointer;
+}
+
+path {
+  transition: all 0.2s ease-in-out;
+}
+svg:hover path {
+  stroke: #fff;
+}
+/* .map {
+  width: 920px;
+  height: 520px;
+} */
